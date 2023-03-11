@@ -1,48 +1,48 @@
-/* Formatação geral*/
-*{
-    padding: 0;
-    margin: 0;
-}
+/* Formatação geral */
 
-html{
-    height: 100%;
-}
-
-body{
-    overflow-x: hidden;
-    background: linear-gradient(35deg,#ccc,#ccc,#ccc,#ccc,#ccc,#fff,#fff,#ccc,#ccc,#ccc);
-    background-position: center;
-    background-size: cover;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(30deg,#231942,#231942,#231942,#5e548e,#9f86c0,#be95c4);
     background-attachment: fixed;
-    height: 100%;
+    overflow-x: hidden;
 }
 
-/* Container Inicial */
+input[type="checkbox"] {
+	display:none;
+}
 
-#containerIncial{
-    height: 100%;
+input[type="checkbox"]:checked ~ .modal,
+input[type="checkbox"]:checked ~ .modal-background {
+	display: block;
 }
 
 
-/* Formatação do <header> */
+/* Formatação do Menu de navegação */
 
-header{
-    padding: auto;
-
-    background-color: transparent;
+header > .container{
+    height: 75px;
+    position: relative;
+    z-index: 1;
 }
 
-header .navbar div ul li a {
-    color: whitesmoke;
+nav{
+    background: linear-gradient(30deg,rgba(35, 25, 66, 0.45),rgba(94, 84, 142, 0.45),rgba(159, 134, 192, 0.45),rgba(190, 151, 196, 0.45));
+
+
 }
 
-header .navbar div ul li a:hover {
-    color: rgb(0, 0, 0);
+.nav-item a{
+    color: #FFF;
+}
+
+.nav-item a:hover{
+    color: #2b2a2a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Formatação da Seção de Apresentação */
 
-#projetos{
+#apresentacao{
     height: 100%;    
     background-size: 100%;
     padding-top: 40px;
@@ -52,7 +52,7 @@ header .navbar div ul li a:hover {
     height: 600px;
     margin: 0;   
     display: grid;
-    grid-template-rows: 400px 100px;
+    grid-template-rows: 400px 50px;
     grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
     align-items: center;
     justify-items: center;
@@ -86,18 +86,12 @@ div.item {
     transform: rotateY(calc(-10deg * var(--r)))
       translateX(calc(-200px * var(--r)));
     z-index: calc((var(--position) - var(--abs)));
-    border: 1px solid black;
 
     color: white;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     display: flex;
 }
-
-
-
-
-
 
 .nomeProjeto{
     /*border: 1px solid green;*/
@@ -110,33 +104,36 @@ div.item {
 
 div.item:nth-of-type(1) {
     --offset: 1;
-    background-image: url('../assets/Imagem-jokenpo-editada.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-color: #1E1E1E;
-}
-div.item:nth-of-type(2) {
-    --offset: 2;
-    background-image: url('../assets/landingPage.png');
+    background-image: url('../../assets/landingPage.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
     background-color: #A020F0;
 
 }
-div.item:nth-of-type(3) {
-    --offset: 3;
-    background-image: url('../assets/spotfy-clone.png');
+
+div.item:nth-of-type(2) {
+    --offset: 2;
+    background-image: url('../../assets/jokenpoV2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
-    background-color: purple;
+    background-color: #1E1E1E;
+
+}
+
+div.item:nth-of-type(3) {
+    --offset: 3;
+    background-image: url('../../assets/quiz.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-color: #4e4e4e;
 
 }
 div.item:nth-of-type(4) {
     --offset: 4;
-    background-image: url('../assets/calculadoraPrint.png');
+    background-image: url('../../assets/calculadoraPrint.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
@@ -146,7 +143,7 @@ div.item:nth-of-type(4) {
 div.item:nth-of-type(5) {
     --offset: 5;
     background-color: #e9ff70;
-    background-image: url('../assets/googleClone\ 1.png');
+    background-image: url('../../assets/googleClone.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
@@ -194,31 +191,10 @@ input:nth-of-type(5):checked ~ main#carousel {
     --position: 5;
 }
 
-/* Formatação da seção de Formação */
-
-#formacao{
-    height: 100%;
-}
-
-#formacao #txtSobreMim{
-    font-size: 18px;
-    text-align: justify;
-}
-
-#formacao .imgTec img{
-    width: 150px;
-    height: 150px;
-}
-
-
-
 /***** MEDIA QUERIES *****/
-
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
-    
-
     /*Formatação do carousel da seção apresentação*/
 
     div.item {
@@ -230,19 +206,18 @@ input:nth-of-type(5):checked ~ main#carousel {
         --abs: max(calc(var(--r) * -1), var(--r));
         transition: all 0.25s linear;
         transform: rotateY(calc(-10deg * var(--r)))
-          translateX(calc(-150px * var(--r)));
+          translateX(calc(-100px * var(--r)));
         z-index: calc((var(--position) - var(--abs)));
-
-        justify-content: center;
-        align-items: end;
-        display: flex;
+    }
+    .containerPrincipal{
+        display: none;
     }
 
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) { 
-    /*Formatação do carousel da seção apresentação*/
+    /*Formatação do carousel da seção apresentação Desktop */
 
     div.item {
         position: absolute;
@@ -253,13 +228,8 @@ input:nth-of-type(5):checked ~ main#carousel {
         --abs: max(calc(var(--r) * -1), var(--r));
         transition: all 0.25s linear;
         transform: rotateY(calc(-10deg * var(--r)))
-          translateX(calc(-230px * var(--r)));
+          translateX(calc(-180px * var(--r)));
         z-index: calc((var(--position) - var(--abs)));
-
-
-        justify-content: center;
-        align-items: end;
-        display: flex;
     }
 
 }
@@ -278,26 +248,9 @@ input:nth-of-type(5):checked ~ main#carousel {
         --abs: max(calc(var(--r) * -1), var(--r));
         transition: all 0.25s linear;
         transform: rotateY(calc(-10deg * var(--r)))
-        translateX(calc(-250px * var(--r)));
+        translateX(calc(-200px * var(--r)));
         z-index: calc((var(--position) - var(--abs)));
-    
-    
-        
-        
-        justify-content: center;
-        align-items: end;
-        display: flex;
     }
-
-
-
-
-
-
-
-
-
-
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -314,27 +267,9 @@ input:nth-of-type(5):checked ~ main#carousel {
         --abs: max(calc(var(--r) * -1), var(--r));
         transition: all 0.25s linear;
         transform: rotateY(calc(-10deg * var(--r)))
-          translateX(calc(-300px * var(--r)));
+          translateX(calc(-250px * var(--r)));
         z-index: calc((var(--position) - var(--abs)));
-    
-    
-        
-        
-        justify-content: center;
-        align-items: end;
-        display: flex;
     }
-
-
-
-
-
-
-
-
-
-
-
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -351,15 +286,274 @@ input:nth-of-type(5):checked ~ main#carousel {
         --abs: max(calc(var(--r) * -1), var(--r));
         transition: all 0.25s linear;
         transform: rotateY(calc(-10deg * var(--r)))
-          translateX(calc(-300px * var(--r)));
+          translateX(calc(-280px * var(--r)));
         z-index: calc((var(--position) - var(--abs)));
-    
-    
-        
-        
-        justify-content: center;
-        align-items: end;
-        display: flex;
+    }
+}
+
+
+
+/* Formatação Mobile */
+
+#carrousel{
+    height: 380px;
+    width: 300px;
+}
+
+.itensCarousel{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+    margin: 0em 20px;    
+}
+
+.paragrafoTitulo{
+    font-size: 22px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-top: 340px;
+}
+
+/* Formatação da seção Apresentação */
+
+/* Formatação da seção Projetos */
+
+
+
+
+
+
+/* Formatação dos modals dos icones das linguagens */
+
+.modal-background {
+	width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 9998;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;	
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    z-index: 9999;
+}
+
+.modal > p {
+	padding: 15px;
+    margin: 0;
+}
+
+.modal-header {
+	background-color: rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid #dddddd;
+    box-sizing: border-box;
+    height: 65px;
+}
+
+.modal-header h3 {
+	margin: 0 ;
+    box-sizing: border-box;
+    padding-left: 15px;
+    line-height: 50px;
+    color: #4d4d4d;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.modal-header label {
+	box-sizing: border-box;
+    border-left: 1px solid #dddddd;
+    float: right;
+    line-height: 35px;
+    padding: 0 15px 0 15px;
+    cursor: pointer;
+}
+
+.modal-header label:hover img {
+	opacity: 0.6;
+}
+
+.example-label {
+	box-sizing: border-box;
+    display: inline-block;
+    /*padding: 10px;*/
+    color: #f9f9f9;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 80px;
+}
+
+.example-label:hover {
+	background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 1px -1px 50px 10px rgba(255, 255, 255, 0.5);
+}
+
+.modal-conteudo{
+    color: #000;
+    height: 449px;
+    margin: 3px;
+    padding: 2px;
+
+}
+
+.modal-conteudo > .container{
+    border: 2px solid yellow;
+    height: 430px;
+}
+
+
+/* Formatação do container das amostras dos projetos */
+
+.tituloProjeto{
+    background-color: rgba(255, 255, 255, 0.65);
+    position: relative;
+    bottom: 145px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #000;
+    padding-bottom: 2px;
+}
+
+.tituloProjeto > .col-12 > p{
+    font-size: 26px;
+
+}
+
+.tituloProjeto > .col-12 > .row > .col-6 > a{
+    font-size: 18px;
+    color: #000;
+}
+
+.tituloProjeto > .col-12 > .row > .col-6 > a > img{
+    height: 50px;
+}
+
+
+
+.img-fluid-config {
+    max-width: 150px;
+    height: auto;
+}
+
+
+
+/***** MEDIA QUERIES *****/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+
+    /* Formatação dos modals dos icones das linguagens */
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: none;	
+        width: 350px;
+        height: 550px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-sizing: border-box;
+        z-index: 9999;
+    }
+
+    .img-fluid-config {
+        max-width: 80px;
+        height: auto;
+    }
+
+    /* Formatação do container das amostras dos projetos */
+
+    .tituloProjeto{
+        position: relative;
+        bottom: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: #000;
+    }
+
+    .tituloProjeto > .col-12 > p{
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .tituloProjeto > .col-12 > .row > .col-6 > a{
+        font-size: 10px;
+        color: #000;
+        margin: 0;
+    }
+
+    .tituloProjeto > .col-12 > .row > .col-6 > a > img{
+        height: 25px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+    /* Formatação dos modals dos icones das linguagens */
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: none;	
+        width: 450px;
+        height: 500px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-sizing: border-box;
+        z-index: 9999;
+    }
+
+    .img-fluid-config {
+        max-width: 90px;
+        height: auto;
+    }
+
+    /* Formatação do container das amostras dos projetos */
+
+    .tituloProjeto{
+        position: relative;
+        bottom: 110px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: #000;
+    }
+
+    .tituloProjeto > .col-12 > p{
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .tituloProjeto > .col-12 > .row > .col-6 > a{
+        font-size: 12px;
+        color: #000;
+        margin: 0;
+    }
+
+    .tituloProjeto > .col-12 > .row > .col-6 > a > img{
+        height: 25px;
     }
 
 
@@ -368,7 +562,60 @@ input:nth-of-type(5):checked ~ main#carousel {
 
 
 
+}
 
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    /* Formatação dos modals dos icones das linguagens */
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: none;	
+        width: 450px;
+        height: 500px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-sizing: border-box;
+        z-index: 9999;
+    }
+
+    .img-fluid-config {
+        max-width: 100px;
+        height: auto;
+    }
+
+    /* Formatação do container das amostras dos projetos */
+
+    .tituloProjeto{
+        position: relative;
+        bottom: 130px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: #000;
+    }
+
+    .tituloProjeto > .col-12 > p{
+        font-size: 20px;
+        margin: 0;
+
+    }
+
+    .tituloProjeto > .col-12 > .row > .col-6 > a{
+        font-size: 14px;
+        color: #000;
+    }
+
+    .tituloProjeto > .col-12 > .row > .col-6 > a > img{
+        height: 40px;
+    }
+
+    
+    
 
 
 
@@ -378,6 +625,109 @@ input:nth-of-type(5):checked ~ main#carousel {
 
 
 }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    /* Formatação dos modals dos icones das linguagens */
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: none;	
+        width: 500px;
+        height: 500px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-sizing: border-box;
+        z-index: 9999;
+    }
+
+    .img-fluid-config {
+        max-width: 130px;
+        height: auto;
+    }
+
+    /* Formatação do container das amostras dos projetos */
+
+    .tituloProjeto{
+        position: relative;
+        bottom: 140px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: #000;
+        padding-bottom: 2px;
+    }
+
+    .tituloProjeto > .col-12 > p{
+        font-size: 22px;
+
+    }
+
+    .tituloProjeto > .col-12 > .row > .col-6 > a{
+        font-size: 16px;
+        color: #000;
+    }
+
+    .tituloProjeto > .col-12 > .row > .col-6 > a > img{
+        height: 50px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+    /* Formatação dos modals dos icones das linguagens */
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        display: none;	
+        width: 500px;
+        height: 500px;
+        background-color: rgba(255, 255, 255, 0.8);
+        box-sizing: border-box;
+        z-index: 9999;
+    }
+
+    /* Formatação do container das amostras dos projetos */
+
+    .tituloProjeto{
+        position: relative;
+        bottom: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: #000;
+        padding-bottom: 2px;
+    }
+
+    .tituloProjeto > .col-12 > p{
+        font-size: 26px;
+
+    }
+
+    .tituloProjeto > .col-12 > .row > .col-6 > a{
+        font-size: 18px;
+        color: #000;
+    }
+
+    .tituloProjeto > .col-12 > .row > .col-6 > a > img{
+        height: 50px;
+    }
+}
+
+/* Formatação da seção Projetos */
+
+
+
+
 
 
 

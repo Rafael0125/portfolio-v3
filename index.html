@@ -20,142 +20,840 @@
 
     <body>
 
-        <section id="containerIncial">
+        <header>
 
-            <header> <!-- Inicio // Cabeçalho -->            
-                <nav  class="navbar navbar-transparente navbar-expand-md "> <!-- Barra de Navegação // Inicio -->
-                    <div class="container justify-content-end mr-3">
-                        <img id="meuLogo" src="./assets/logo1.png" alt="Rafael Navarro" class="img-fluid mr-auto">
-
-                        <!-- Menu Hamburger -->
-                        <button class="navbar-toggler" data-toggle='collapse' data-target='#nav-principal'>
-                            <i class="fa-solid fa-bars"></i>    
-                        </button>
-
-                        <!-- Navegação -->
-                        <div class="collapse navbar-collapse text-right mr-2 " id="nav-principal">                      
-                            <ul class="navbar-nav ml-auto mt-1  ">
-                                <li class="nav-item">
-                                    <a href="#segundaSecao" class="nav-link">
-                                        Sobre mim
-                                    </a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="#segundaSecao" class="nav-link">
-                                        Formação
-                                    </a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a href="#quartaSecao" class="nav-link">
-                                        Projetos
-                                    </a>
-                                </li>
-                            </ul>
-                        </div> 
-                    </div>                
+            <div class="container justify-content-end">
+                <nav class="navbar navbar-white navbar-expand-sm "> <!-- Barra de Navegação // Inicio -->
+                    <img id="meuLogo" src="../../assets/logo1.png" alt="Rafael Navarro" class="img-fluid">
+            
+                    <!-- Menu Hamburger -->
+                    <button class="navbar-toggler " data-toggle='collapse' data-target='#nav-principal'>
+                        <img src="../../assets/menu.svg" alt="" class="m-1">  
+                    </button>
+            
+                    <!-- Navegação -->
+                    <div class="collapse navbar-collapse text-center mr-2 " id="nav-principal">                      
+                        <ul class="navbar-nav ml-auto mt-1  ">
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    Apresentação
+                                </a>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    Sobre mim
+                                </a>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    Projetos
+                                </a>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    Contatos
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
                 </nav> <!-- Barra de Navegação // Fim -->
-            </header> <!-- Fim // Cabeçalho -->
+            
+            </div>
+            
+            
+            
+            
 
-            <section id="projetos">
-                <div class="containerPrincipal">
-                    <input type="radio" name="position"  />
-                    <input type="radio" name="position" />
-                    <input type="radio" name="position" checked/>
-                    <input type="radio" name="position" />
-                    <input type="radio" name="position" />
-                    <main id="carousel">
-                        <div class="item">
-                            <div class="col-12 nomeProjeto">
-                                Jokenpo
-                            </div>
+
+
+        </header>
+
+
+
+        <section id="apresentacao" class="">
+            <div class="containerPrincipal">
+                <input type="radio" name="position"  />
+                <input type="radio" name="position" />
+                <input type="radio" name="position" checked/>
+                <input type="radio" name="position" />
+                <input type="radio" name="position" />
+                <main id="carousel">
+                    <div class="item">
+                        <div class="col-12 nomeProjeto">
+                            Landing Page
                         </div>
-                
-                        <div class="item">
-                            <div class="col-12 nomeProjeto">
-                                Landing Page
-                            </div>
+                    </div>
+            
+                    <div class="item">
+                        <div class="col-12 nomeProjeto">
+                            Jokenpo
                         </div>
-                        <div class="item">
-                            <div class="col-12 nomeProjeto">
-                                Spotify Clone
-                            </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-12 nomeProjeto">
+                            Quiz
                         </div>
-                        <div class="item">
-                            <div class="col-12 nomeProjeto">
+                    </div>
+                    <div class="item">
+                        <div class="col-12 nomeProjeto">
+                            Calculadora
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-12 nomeProjeto">
+                            Google Clone
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <div class="container d-flex d-sm-none justify-content-center text-white" style="margin: 15px;">
+        
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner d-flex" id="carrousel">
+        
+                        <!-- Slide 1 -->
+                        <div class="carousel-item itensCarousel" 
+                        style="background-image: url(../../assets/calculadoraSlice.svg);background-color: #ccc;background-repeat: no-repeat;"> 
+                            <div class="paragrafoTitulo">
                                 Calculadora
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="col-12 nomeProjeto">
+        
+                        <!-- Slide 2 -->
+                        <div class="carousel-item itensCarousel"
+                        style="background-image: url(../../assets/googleClone.png);background-color: #ffffff;background-repeat: no-repeat;"> 
+                            <div class="paragrafoTitulo">
                                 Google Clone
                             </div>
+        
                         </div>
-                    </main>
+        
+                        <!-- Slide 3 -->
+                        <div class="carousel-item itensCarousel"
+                        style="background-image: url(../../assets/jokenpoV2.png);background-color: #1E1E1E;background-repeat: no-repeat;"> 
+                            <div class="paragrafoTitulo">
+                                Jokenpô
+                            </div>
+        
+                        </div>
+        
+                        <!-- Slide 4 -->
+                        <div class="carousel-item itensCarousel"
+                        style="background-image: url(../../assets/landingPage.png);background-color: #A020F0;background-repeat: no-repeat;">
+                            <div class="paragrafoTitulo">
+                                Landing Page
+                            </div>
+        
+                        </div>
+        
+                        <!-- Slide 5 -->
+                        <div class="carousel-item itensCarousel active"
+                        style="background-image: url(../../assets/quiz.png);background-color: #4e4e4e;background-repeat: no-repeat;"> 
+                            <div class="paragrafoTitulo">
+                                Quiz Game
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <!--<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>-->
                 </div>
-            </section>
-
+            </div>
         </section>
 
-        <section id="formacao" class="d-flex flex-column">
 
-            <div class="container mt-5">
-                <div class="row p-1">
-                    <div class="col-md-12">
-                        <div id="txtSobreMim">
-                            <p class="row">
-                                Oi meu nome é Rafael Navarro sou um Desenvolvedor Web Front-end, sempre fui interessado por tecnologias, então estudei focando na área de computação e informática, assim consegui me inserir no mercado como técnico.
-                            </p>
+        <section id="projetos">
 
-                            <p class="row">
-                                Enquanto eu trabalhava nas empresas por onde passei fui conversando com os profissionais da área e decidi que queria mudar de setor e ir para o Desenvolvimento.
-                            </p>
+            
 
-                            <p class="row">
-                                Estudando as áreas de desenvolvimento escolhi focar em desenvolvimento web, iniciando por Front-end, fiz cursos de HTML, CSS, JavaScript e Bootstrap, continuo estudado sempre novas tecnologias de web para me especializar cada vez mais na áreas de desenvolvimento.
+
+<div id="projetos" class="container text-white" style="margin-top: 1rem;margin-bottom: 3rem;">
+    <div class="row" style="margin-right: auto; margin-left: auto;">
+
+        <div class="container m-1 my-3 p-1"> <!-- Sobre mim // Inicio -->
+            <div class="row">
+                <div class="col-md-7 my-2">
+                    <div class="row p-1 m-1">
+                        <div class="col-3 m-2 d-flex justify-content-center ">
+                            <img src="../../assets/fotoUm.svg">
+                        </div>
+                        <div class="col-8" >
+                            <div class="row m-1 mt-3">
+                                <h4>
+                                    Rafael Navarro
+                                </h4> 
+                            </div>
+                            <div class="row m-1 mt-4">
+                                
+                                <h5>
+                                    Desenvolvedor Web Front-End
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 offset-md-1  my-2 p-1">
+                    <div class="row">
+                        <div class="col offset-1">
+                            <p>
+                                Estudante de desenvolvimento web focando no front-end com formação em HTML, CSS, JavaScript e TypeScript e frameworks como Bootstrap e Angular
                             </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div><!-- Sobre mim // Fim -->
+
+        <div class="container m-1 my-3 p-1"> <!-- Icones das linguagens // Inicio -->
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6"> <!-- Coluna esquerda -->
+
+                    <div class="row d-flex align-items-center" >
+
+                        <div class="col-4"> <!-- HTML 5 -->
+                            <input type="checkbox" id="modal">
+                            <label for="modal" class="example-label">
+                                <img src="../../assets/lingProjetos/HTML5_logo.svg" class='img-fluid-config'>
+                            </label>
+                            <label for="modal" class="modal-background"></label>
+                            <div class="modal">
+                                <div class="modal-header">
+                                    <h3>HTML</h3>
+                                    <label for="modal">
+                                        <img src="../../assets/exit.svg" alt="">
+                                    </label>
+                                </div>
+                                <div class="modal-conteudo">
+                                    <div class="container">
+                                        <div class="row mt-1 p-2 border border-danger">                                    
+                                                <ul class="mt-3">
+                                                    <li class="my-2">
+                                                        HTML é uma linguagem de marcação.
+                                                    </li>
+                                                    <li class="my-2">
+                                                        Usada como base de construção de páginas Web.
+                                                    </li>
+                                                    <li class="my-2">
+                                                        Criado em 1991 por Tim Berners-Lee.
+                                                    </li>
+                                                </ul>
+                                        </div>
+
+                                        <div class="row mt-1 p-2 border border-danger">
+                                            <div class="col-12 border border-danger">
+                                                <div class="row border border-danger">
+                                                    <div class="col-6 border border-danger">
+                                                        <div class="row border border-success mx-1 my-3">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, optio?
+                                                        </div>
+                                                        <div class="row border border-success mx-1 my-2">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum.
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 border border-danger ">
+                                                        <div class="row">
+                                                            <div class="col-11 m-1 my-2 border border-success">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus at dicta quam numquam consectetur sint quasi voluptatem neque sed aut. luptatem neque sed aut. 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4"> <!-- CSS 3 -->
+                            <input type="checkbox" id="modal-1">
+                            <label for="modal-1" class="example-label">
+                                <img src="../../assets/lingProjetos/CSS3_logo.svg" class='img-fluid-config'>
+                            </label>
+                            <label for="modal-1" class="modal-background"></label>
+                            <div class="modal">
+                                <div class="modal-header">
+                                    <h3>CSS 3</h3>
+                                    <label for="modal-1">
+                                        <img src="../../assets/exit.svg" alt="">
+                                    </label>
+                                </div>
+                                <div class="modal-conteudo">
+                                    <div class="container">
+                                        <div class="row mt-1 p-1 border border-danger">                                    
+                                                <ul class="mt-3">
+                                                    <li class="my-1">
+                                                        CSS é a linguagem que usamos para estilizar um documento HTML.
+                                                    </li>
+                                                    <li class="my-1">
+                                                        CSS descreve como os elementos HTML devem ser exibidos.
+                                                    </li>
+                                                    <li class="my-1">
+                                                        Criado em 1996 pelo World Wide Web Consortium, para complementar o HTML.
+                                                    </li>
+                                                </ul>
+                                        </div>
+
+                                        <div class="row mt-1 p-2 border border-danger">
+                                            <div class="col-12 border border-danger">
+                                                <div class="row border border-danger">
+                                                    <div class="col-6 border border-danger">
+                                                        <div class="row border border-success mx-1 my-3">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, optio?
+                                                        </div>
+                                                        <div class="row border border-success mx-1 my-2">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum.
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 border border-danger ">
+                                                        <div class="row">
+                                                            <div class="col-11 m-1 my-2 border border-success">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus at dicta quam numquam consectetur sint quasi voluptatem neque sed aut. luptatem neque sed aut. 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4"> <!-- JavaScript -->
+                            <input type="checkbox" id="modal-2">
+                            <label for="modal-2" class="example-label">
+                                <img src="../../assets/lingProjetos/JavaScript_logo.svg" class='img-fluid-config'>
+                            </label>
+                            <label for="modal-2" class="modal-background"></label>
+                            <div class="modal">
+                                <div class="modal-header">
+                                    <h3>JavaScript</h3>
+                                    <label for="modal-2">
+                                        <img src="../../assets/exit.svg" alt="">
+                                    </label>
+                                </div>
+                                <div class="modal-conteudo">
+                                    <div class="container">
+                                        <div class="row mt-1 p-2 border border-danger">                                    
+                                                <ul class="mt-1">
+                                                    <li class="">
+                                                        JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.
+                                                    </li>
+                                                    <li class="my-2">
+                                                        Juntamente com HTML e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web.
+                                                    </li>
+                                                    <li class="my-2">
+                                                        Criado em 1995 por Brendan Eich.
+                                                    </li>
+                                                </ul>
+                                        </div>
+
+                                        <div class="row mt-1 p-2 border border-danger">
+                                            <div class="col-12 border border-danger">
+                                                <div class="row border border-danger">
+                                                    <div class="col-6 border border-danger">
+                                                        <div class="row border border-success mx-1 my-3">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, optio?
+                                                        </div>
+                                                        <div class="row border border-success mx-1 my-2">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum.
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 border border-danger ">
+                                                        <div class="row">
+                                                            <div class="col-11 m-1 my-2 border border-success">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus at dicta quam numquam consectetur sint quasi voluptatem neque sed aut. luptatem neque sed aut. 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6"> <!-- Coluna direita -->
+
+                    <div class="row align-items-center" >
+
+                        <div class="col-4"> <!-- TypeScript -->
+                            <input type="checkbox" id="modal-3">
+                            <label for="modal-3" class="example-label">
+                                <img src="../../assets/lingProjetos/Typescript_logo.svg" class='img-fluid-config'>
+                            </label>
+                            <label for="modal-3" class="modal-background"></label>
+                            <div class="modal">
+                                <div class="modal-header">
+                                    <h3>TypeScript</h3>
+                                    <label for="modal-3">
+                                        <img src="../../assets/exit.svg" alt="">
+                                    </label>
+                                </div>
+                                <div class="modal-conteudo">
+                                    <div class="container">
+                                        <div class="row mt-1 border border-danger">                                    
+                                                <ul class="mt-1">
+                                                    <li class="">
+                                                        O TypeScript é uma linguagem de programação que é fortemente tipada e transcompila para JavaScript.
+                                                    </li>
+                                                    <li class="my-2">
+                                                        É um superconjunto de JavaScript, ou seja, um conjunto de ferramentas e formas mais eficientes de escrever código JavaScript
+                                                    </li>
+                                                    <li class="">
+                                                        O TypeScript começou a ser desenvolvido pela Microsoft em 2012.
+                                                    </li>
+                                                </ul>
+                                        </div>
+
+                                        <div class="row mt-1 p-2 border border-danger">
+                                            <div class="col-12 border border-danger">
+                                                <div class="row border border-danger">
+                                                    <div class="col-6 border border-danger">
+                                                        <div class="row border border-success mx-1 my-3">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, optio?
+                                                        </div>
+                                                        <div class="row border border-success mx-1 my-2">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum.
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 border border-danger ">
+                                                        <div class="row">
+                                                            <div class="col-11 m-1 my-2 border border-success">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus at dicta quam numquam consectetur sint quasi voluptatem neque sed aut. luptatem neque sed aut. 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4"> <!-- Bootstrap -->
+                            <input type="checkbox" id="modal-4">
+                            <label for="modal-4" class="example-label">
+                                <img src="../../assets/lingProjetos/Bootstrap_logo.svg" class='img-fluid-config'>
+                            </label>
+                            <label for="modal-4" class="modal-background"></label>
+                            <div class="modal">
+                                <div class="modal-header">
+                                    <h3>Bootstrap</h3>
+                                    <label for="modal-4">
+                                        <img src="../../assets/exit.svg" alt="">
+                                    </label>
+                                </div>
+                                <div class="modal-conteudo">
+                                    <div class="container">
+                                        <div class="row mt-1  border border-danger">                                    
+                                                <ul class="mt-1">
+                                                    <li class="">
+                                                        Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end
+                                                    </li>
+                                                    <li class="my-2">
+                                                        Usando HTML, CSS e JavaScript
+                                                    </li>
+                                                    <li class="">
+                                                        Criado em 2010 por Jacob Thorton e Mark Otto.
+                                                    </li>
+                                                </ul>
+                                        </div>
+
+                                        <div class="row mt-1 p-2 border border-danger">
+                                            <div class="col-12 border border-danger">
+                                                <div class="row border border-danger">
+                                                    <div class="col-6 border border-danger">
+                                                        <div class="row border border-success mx-1 my-3">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, optio?
+                                                        </div>
+                                                        <div class="row border border-success mx-1 my-2">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum.
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 border border-danger ">
+                                                        <div class="row">
+                                                            <div class="col-11 m-1 my-2 border border-success">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus at dicta quam numquam consectetur sint quasi voluptatem neque sed aut. luptatem neque sed aut. 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4"> <!-- Angular -->
+                            <input type="checkbox" id="modal-5">
+                            <label for="modal-5" class="example-label">
+                                <img src="../../assets/lingProjetos/Angular_logo.svg" class='img-fluid-config'>
+                            </label>
+                            <label for="modal-5" class="modal-background"></label>
+                            <div class="modal">
+                                <div class="modal-header">
+                                    <h3>Angular</h3>
+                                    <label for="modal-5">
+                                        <img src="../../assets/exit.svg" alt="">
+                                    </label>
+                                </div>
+                                <div class="modal-conteudo">
+                                    <div class="container">
+                                        <div class="row mt-1 p-2 border border-danger">                                    
+                                                <ul class="mt-3">
+                                                    <li class="my-2">
+                                                        Angular é uma plataforma de aplicações web de código-fonte aberto e front-end baseado em TypeScript
+                                                    </li>
+                                                    <li class="my-2">
+                                                        É um framework JavaScript de código aberto mantido pela Google para a construção de SPA (Single Page Applications).
+                                                    </li>
+                                                    <li class="my-2">
+                                                        Criado em 2009 por Miško Hevery.
+                                                    </li>
+                                                </ul>
+                                        </div>
+
+                                        <div class="row mt-1 p-2 border border-danger">
+                                            <div class="col-12 border border-danger">
+                                                <div class="row border border-danger">
+                                                    <div class="col-6 border border-danger">
+                                                        <div class="row border border-success mx-1 my-3">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, optio?
+                                                        </div>
+                                                        <div class="row border border-success mx-1 my-2">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum.
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 border border-danger ">
+                                                        <div class="row">
+                                                            <div class="col-11 m-1 my-2 border border-success">
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus at dicta quam numquam consectetur sint quasi voluptatem neque sed aut. luptatem neque sed aut. 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div> <!-- Icones das linguagens // Fim -->
+
+        <div class="container ml-2 m-1 my-3 p-1"> <!-- Projetos // Inicio -->
+
+            <div class="row justify-content-center">
+                <h1>Projetos</h1>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-6 col-sm-4">
+                    <img src="../../assets/imgProjetos/CalculadoraMobile.jpeg" class="img-fluid">
+                    <div class="row tituloProjeto">
+                        <div class="col-12">
+                            <p>
+                                Calculadora
+                            </p>
+                            <div class="row">
     
+                                <div class=" col-6">
+                                    <a href="https://rafael0125.github.io/CalculadoraWeb/">
+                                        <p>
+                                            Link do projeto
+                                        </p>                                                                            
+                                        <img src="../../assets/iconSite.svg">
+                                    </a>
+                                </div>
+    
+                                <div class="col-6">
+                                    <a href="https://github.com/Rafael0125/CalculadoraWeb">
+                                        <p>
+                                            Link do GitHub
+                                        </p>                                        
+                                        <img src="../../assets/iconGitHub.svg">
+                                    </a>
+                                </div>
+    
+                            </div>
+
                         </div>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4">
+                    <img src="../../assets/imgProjetos/GoogleCloneMobile.jpeg" class="img-fluid">
+                    <div class="row tituloProjeto">
+                        <div class="col-12">
+                            <p>
+                                Google Clone
+                            </p>
+                            <div class="row">
+    
+                                <div class=" col-6">
+                                    <a href="https://rafael0125.github.io/Google_Clone/">
+                                        <p>
+                                            Link do projeto
+                                        </p>
+                                        <img src="../../assets/iconSite.svg">
+                                    </a>
+                                </div>
+    
+                                <div class="col-6">
+                                    <a href="https://github.com/Rafael0125/Google_Clone">
+                                        <p>
+                                            Link do GitHub
+                                        </p>
+                                        <img src="../../assets/iconGitHub.svg">
+                                    </a>
+                                </div>
+    
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="col-4 col-sm-4 d-none d-sm-block">
+                    <img src="../../assets/imgProjetos/JokenpoMobile.jpeg" class="img-fluid">
+                    <div class="row tituloProjeto">
+                        <div class="col-12">
+                            <p>
+                                Jokenpô
+                            </p>
+                            <div class="row">
+    
+                                <div class=" col-6">
+                                    <a href="http://jokenpo-v2.s3-website-sa-east-1.amazonaws.com/">
+                                        <p>
+                                            Link do projeto
+                                        </p>
+                                        <img src="../../assets/iconSite.svg">
+                                    </a>
+                                </div>
+    
+                                <div class="col-6">
+                                    <a href="https://github.com/Rafael0125/Jokenpo">
+                                        <p>
+                                            Link do GitHub
+                                        </p>
+                                        <img src="../../assets/iconGitHub.svg">
+                                    </a>
+                                </div>
+    
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <div class="container align-items-end">
-                <div class="row justify-content-center ">
-                    <div class="row my-3 mx-md-1">
-                        <div class="col-4 d-flex align-content-center imgTec">
-                            <img src="./assets/lingProjetos/HTML5_logo.svg" class="img-fluid">
+            <div class="row d-sm-none my-3">
+                <div class="col-6 col-sm-4 d-sm-none d-block">
+                    <img src="../../assets/imgProjetos/JokenpoMobile.jpeg" class="img-fluid">
+                    <div class="row tituloProjeto">
+                        <div class="col-12">
+                            <p>
+                                Calculadora
+                            </p>
+                            <div class="row">
+    
+                                <div class=" col-6">
+                                    <a href="https://rafael0125.github.io/CalculadoraWeb/">
+                                        <p>
+                                            Link do projeto
+                                        </p>
+                                        <img src="../../assets/iconSite.svg">
+                                    </a>
+                                </div>
+    
+                                <div class="col-6">
+                                    <a href="https://github.com/Rafael0125/CalculadoraWeb">
+                                        <p>
+                                            Link do GitHub
+                                        </p>
+                                        <img src="../../assets/iconGitHub.svg">
+                                    </a>
+                                </div>
+    
+                            </div>
+
                         </div>
 
-                        <div class="col-4 d-flex align-content-center imgTec">
-                            <img src="./assets/lingProjetos/CSS3_logo.svg" class="img-fluid">
-                        </div>
-
-                        <div class="col-4 d-flex align-content-center imgTec">
-                            <img src="./assets/lingProjetos/JavaScript_logo.svg" class="img-fluid">
-                        </div>
                     </div>
+                </div>
 
-                    <div class="row my-3 mx-md-1">
-                        <div class="col-4 d-flex align-content-center imgTec">
-                            <img src="./assets/lingProjetos/Bootstrap_logo.svg" class="img-fluid">
+                <div class="col-6 col-sm-4 d-sm-none d-block">
+                    <img src="../../assets/imgProjetos/QuizMobile.jpeg" class="img-fluid">
+                    <div class="row tituloProjeto">
+                        <div class="col-12">
+                            <p>
+                                Quiz Game
+                            </p>
+                            <div class="row">
+    
+                                <div class=" col-6">
+                                    <a href="http://quiz-game-v2.s3-website-us-east-1.amazonaws.com/">
+                                        <p>
+                                            Link do projeto
+                                        </p>
+                                        <img src="../../assets/iconSite.svg">
+                                    </a>
+                                </div>
+    
+                                <div class="col-6">
+                                    <a href="https://github.com/Rafael0125/Quiz_Game">
+                                        <p>
+                                            Link do GitHub
+                                        </p>
+                                        <img src="../../assets/iconGitHub.svg">
+                                    </a>
+                                </div>
+    
+                            </div>
+
                         </div>
 
-                        <div class="col-4 d-flex align-content-center imgTec">
-                            <img src="./assets/lingProjetos/Angular_logo.svg" class="img-fluid">
-                        </div>
-
-                        <div class="col-4 d-flex align-content-center imgTec">
-                            <img src="./assets/lingProjetos/Typescript_logo.svg" class="img-fluid">
-                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-6 col-sm-4">
+                    <img src="../../assets/imgProjetos/LandingPageMobile.jpeg" class="img-fluid">
+                    <div class="row tituloProjeto">
+                        <div class="col-12">
+                            <p>
+                                Landing Page
+                            </p>
+                            <div class="row">
+    
+                                <div class=" col-6">
+                                    <a href="https://rafael0125.github.io/Landing_page/">
+                                        Link do projeto                                    
+                                        <img src="../../assets/iconSite.svg">
+                                    </a>
+                                </div>
+    
+                                <div class="col-6">
+                                    <a href="https://github.com/Rafael0125/Landing_page">
+                                        Link do GitHub
+                                        <img src="../../assets/iconGitHub.svg">
+                                    </a>
+                                </div>
+    
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4">
+                    <img src="../../assets/imgProjetos/SpotifyMobile.jpeg" class="img-fluid">
+                    <div class="row tituloProjeto">
+                        <div class="col-12">
+                            <p>
+                                Spotify Clone
+                            </p>
+                            <div class="row">
+    
+                                <div class=" col-6">
+                                    <a href="https://rafael0125.github.io/projeto_spotify_clone/">
+                                        Link do projeto                                    
+                                        <img src="../../assets/iconSite.svg">
+                                    </a>
+                                </div>
+    
+                                <div class="col-6">
+                                    <a href="https://github.com/Rafael0125/projeto_spotify_clone">
+                                        Link do GitHub
+                                        <img src="../../assets/iconGitHub.svg">
+                                    </a>
+                                </div>
+    
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-4 col-sm-4 d-none d-sm-block">
+                    <img src="../../assets/imgProjetos/QuizMobile.jpeg" class="img-fluid">
+                    <div class="row tituloProjeto">
+                        <div class="col-12">
+                            <p>
+                                Quiz Game
+                            </p>
+                            <div class="row">
+    
+                                <div class=" col-6">
+                                    <a href="http://quiz-game-v2.s3-website-us-east-1.amazonaws.com/">
+                                        Link do projeto                                    
+                                        <img src="../../assets/iconSite.svg">
+                                    </a>
+                                </div>
+    
+                                <div class="col-6">
+                                    <a href="https://github.com/Rafael0125/Quiz_Game">
+                                        Link do GitHub
+                                        <img src="../../assets/iconGitHub.svg">
+                                    </a>
+                                </div>
+    
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>                
+            </div>
+        </div> <!-- Projetos // Fim -->
+
+    </div>
+</div>
+
+
+
+
+
+
 
         </section>
-
-
 
 
 
