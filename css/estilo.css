@@ -104,7 +104,7 @@ div.item {
 
 div.item:nth-of-type(1) {
     --offset: 1;
-    background-image: url('../../assets/landingPage.png');
+    background-image: url('../assets/landingPage.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
@@ -114,7 +114,7 @@ div.item:nth-of-type(1) {
 
 div.item:nth-of-type(2) {
     --offset: 2;
-    background-image: url('../../assets/jokenpoV2.png');
+    background-image: url('../assets/jokenpoV2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
@@ -124,26 +124,28 @@ div.item:nth-of-type(2) {
 
 div.item:nth-of-type(3) {
     --offset: 3;
-    background-image: url('../../assets/quiz.png');
+    background-image: url('../assets/quiz.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
     background-color: #4e4e4e;
 
 }
+
 div.item:nth-of-type(4) {
     --offset: 4;
-    background-image: url('../../assets/calculadoraPrint.png');
+    background-image: url('../assets/calculadoraPrint.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
     background-color: #ccc;
 
 }
+
 div.item:nth-of-type(5) {
     --offset: 5;
     background-color: #e9ff70;
-    background-image: url('../../assets/googleClone.png');
+    background-image: url('../assets/googleClone.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size:contain;
@@ -155,6 +157,7 @@ input:nth-of-type(1) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
+
 input:nth-of-type(1):checked ~ main#carousel {
     --position: 1;
 }
@@ -163,6 +166,7 @@ input:nth-of-type(2) {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
 }
+
 input:nth-of-type(2):checked ~ main#carousel {
     --position: 2;
 }
@@ -171,6 +175,7 @@ input:nth-of-type(3) {
     grid-column: 4 /5;
     grid-row: 2 / 3;
 }
+
 input:nth-of-type(3):checked ~ main#carousel {
     --position: 3;
 }
@@ -179,6 +184,7 @@ input:nth-of-type(4) {
     grid-column: 5 / 6;
     grid-row: 2 / 3;
 }
+
 input:nth-of-type(4):checked ~ main#carousel {
     --position: 4;
 }
@@ -187,111 +193,10 @@ input:nth-of-type(5) {
     grid-column: 6 / 7;
     grid-row: 2 / 3;
 }
+
 input:nth-of-type(5):checked ~ main#carousel {
     --position: 5;
 }
-
-/***** MEDIA QUERIES *****/
-
-/*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { 
-    /*Formatação do carousel da seção apresentação*/
-
-    div.item {
-        position: absolute;
-        width: 200px;
-        height: 300px;
-        background-color: #ff7f50;
-        --r: calc(var(--position) - var(--offset));
-        --abs: max(calc(var(--r) * -1), var(--r));
-        transition: all 0.25s linear;
-        transform: rotateY(calc(-10deg * var(--r)))
-          translateX(calc(-100px * var(--r)));
-        z-index: calc((var(--position) - var(--abs)));
-    }
-    .containerPrincipal{
-        display: none;
-    }
-
-}
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) { 
-    /*Formatação do carousel da seção apresentação Desktop */
-
-    div.item {
-        position: absolute;
-        width: 250px;
-        height: 350px;
-        background-color: #ff7f50;
-        --r: calc(var(--position) - var(--offset));
-        --abs: max(calc(var(--r) * -1), var(--r));
-        transition: all 0.25s linear;
-        transform: rotateY(calc(-10deg * var(--r)))
-          translateX(calc(-180px * var(--r)));
-        z-index: calc((var(--position) - var(--abs)));
-    }
-
-}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-    /*Formatação do carousel da seção apresentação*/
-
-    div.item {
-        position: absolute;
-        width: 250px;
-        height: 350px;
-        background-color: #ff7f50;
-        --r: calc(var(--position) - var(--offset));
-        --abs: max(calc(var(--r) * -1), var(--r));
-        transition: all 0.25s linear;
-        transform: rotateY(calc(-10deg * var(--r)))
-        translateX(calc(-200px * var(--r)));
-        z-index: calc((var(--position) - var(--abs)));
-    }
-}
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
-    /*Formatação do carousel da seção apresentação*/
-
-    div.item {
-        position: absolute;
-        width: 300px;
-        height: 400px;
-        background-color: #ff7f50;
-        --r: calc(var(--position) - var(--offset));
-        --abs: max(calc(var(--r) * -1), var(--r));
-        transition: all 0.25s linear;
-        transform: rotateY(calc(-10deg * var(--r)))
-          translateX(calc(-250px * var(--r)));
-        z-index: calc((var(--position) - var(--abs)));
-    }
-}
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-
-    /*Formatação do carousel da seção apresentação*/
-
-    div.item {
-        position: absolute;
-        width: 300px;
-        height: 400px;
-        background-color: #ff7f50;
-        --r: calc(var(--position) - var(--offset));
-        --abs: max(calc(var(--r) * -1), var(--r));
-        transition: all 0.25s linear;
-        transform: rotateY(calc(-10deg * var(--r)))
-          translateX(calc(-280px * var(--r)));
-        z-index: calc((var(--position) - var(--abs)));
-    }
-}
-
-
 
 /* Formatação Mobile */
 
@@ -318,12 +223,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 
 /* Formatação da seção Projetos */
 
-
-
-
-
-
-/* Formatação dos modals dos icones das linguagens */
+    /* Formatação dos modals dos icones das linguagens */
 
 .modal-background {
 	width: 100%;
@@ -416,7 +316,6 @@ input:nth-of-type(5):checked ~ main#carousel {
     height: 430px;
 }
 
-
 /* Formatação do container das amostras dos projetos */
 
 .tituloProjeto{
@@ -444,13 +343,12 @@ input:nth-of-type(5):checked ~ main#carousel {
     height: 50px;
 }
 
-
-
 .img-fluid-config {
     max-width: 150px;
     height: auto;
 }
 
+/* Formatação da seção Projetos */
 
 
 /***** MEDIA QUERIES *****/
@@ -504,6 +402,42 @@ input:nth-of-type(5):checked ~ main#carousel {
     .tituloProjeto > .col-12 > .row > .col-6 > a > img{
         height: 25px;
     }
+
+
+    /*Formatação do carousel da seção apresentação*/
+
+    div.item {
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        background-color: #ff7f50;
+        --r: calc(var(--position) - var(--offset));
+        --abs: max(calc(var(--r) * -1), var(--r));
+        transition: all 0.25s linear;
+        transform: rotateY(calc(-10deg * var(--r)))
+            translateX(calc(-100px * var(--r)));
+        z-index: calc((var(--position) - var(--abs)));
+    }
+    .containerPrincipal{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -556,6 +490,20 @@ input:nth-of-type(5):checked ~ main#carousel {
         height: 25px;
     }
 
+    /*Formatação do carousel da seção apresentação Desktop */
+
+    div.item {
+        position: absolute;
+        width: 250px;
+        height: 350px;
+        background-color: #ff7f50;
+        --r: calc(var(--position) - var(--offset));
+        --abs: max(calc(var(--r) * -1), var(--r));
+        transition: all 0.25s linear;
+        transform: rotateY(calc(-10deg * var(--r)))
+            translateX(calc(-180px * var(--r)));
+        z-index: calc((var(--position) - var(--abs)));
+    }
 
 
 
@@ -614,16 +562,20 @@ input:nth-of-type(5):checked ~ main#carousel {
         height: 40px;
     }
 
-    
-    
+    /*Formatação do carousel da seção apresentação*/
 
-
-
-
-
-
-
-
+    div.item {
+        position: absolute;
+        width: 250px;
+        height: 350px;
+        background-color: #ff7f50;
+        --r: calc(var(--position) - var(--offset));
+        --abs: max(calc(var(--r) * -1), var(--r));
+        transition: all 0.25s linear;
+        transform: rotateY(calc(-10deg * var(--r)))
+        translateX(calc(-200px * var(--r)));
+        z-index: calc((var(--position) - var(--abs)));
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -675,6 +627,21 @@ input:nth-of-type(5):checked ~ main#carousel {
     .tituloProjeto > .col-12 > .row > .col-6 > a > img{
         height: 50px;
     }
+
+    /*Formatação do carousel da seção apresentação*/
+
+    div.item {
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        background-color: #ff7f50;
+        --r: calc(var(--position) - var(--offset));
+        --abs: max(calc(var(--r) * -1), var(--r));
+        transition: all 0.25s linear;
+        transform: rotateY(calc(-10deg * var(--r)))
+            translateX(calc(-250px * var(--r)));
+        z-index: calc((var(--position) - var(--abs)));
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -721,9 +688,36 @@ input:nth-of-type(5):checked ~ main#carousel {
     .tituloProjeto > .col-12 > .row > .col-6 > a > img{
         height: 50px;
     }
+
+    /*Formatação do carousel da seção apresentação*/
+
+    div.item {
+        position: absolute;
+        width: 300px;
+        height: 400px;
+        background-color: #ff7f50;
+        --r: calc(var(--position) - var(--offset));
+        --abs: max(calc(var(--r) * -1), var(--r));
+        transition: all 0.25s linear;
+        transform: rotateY(calc(-10deg * var(--r)))
+            translateX(calc(-280px * var(--r)));
+        z-index: calc((var(--position) - var(--abs)));
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
-/* Formatação da seção Projetos */
 
 
 
