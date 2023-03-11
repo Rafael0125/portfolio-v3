@@ -327,6 +327,7 @@ input:nth-of-type(5):checked ~ main#carousel {
     text-align: center;
     color: #000;
     padding-bottom: 2px;
+    border: 2px solid red;
 }
 
 .tituloProjeto > .col-12 > p{
@@ -365,7 +366,7 @@ input:nth-of-type(5):checked ~ main#carousel {
         bottom: 0;
         margin: auto;
         display: none;	
-        width: 350px;
+        width: 300px;
         height: 550px;
         background-color: rgba(255, 255, 255, 0.8);
         box-sizing: border-box;
@@ -381,7 +382,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 
     .tituloProjeto{
         position: relative;
-        bottom: 90px;
+        bottom: 120px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -389,7 +390,7 @@ input:nth-of-type(5):checked ~ main#carousel {
     }
 
     .tituloProjeto > .col-12 > p{
-        font-size: 16px;
+        font-size: 12px;
         margin: 0;
     }
 
@@ -421,23 +422,6 @@ input:nth-of-type(5):checked ~ main#carousel {
     .containerPrincipal{
         display: none;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 /* Small devices (landscape phones, 576px and up)*/
