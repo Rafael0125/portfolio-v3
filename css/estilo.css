@@ -319,7 +319,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 /* Formatação do container das amostras dos projetos */
 
 .tituloProjeto{
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.65);
     position: relative;
     bottom: 145px;
     margin-left: auto;
