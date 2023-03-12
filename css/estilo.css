@@ -312,14 +312,13 @@ input:nth-of-type(5):checked ~ main#carousel {
 }
 
 .modal-conteudo > .container{
-    border: 2px solid yellow;
     height: 430px;
 }
 
 /* Formatação do container das amostras dos projetos */
 
 .tituloProjeto{
-    background-color: rgba(255, 255, 255, 0.65);
+    background-color: rgba(255, 255, 255, 0.60);
     position: relative;
     bottom: 145px;
     margin-left: auto;
@@ -381,7 +380,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 
     .tituloProjeto{
         position: relative;
-        bottom: 120px;
+        bottom: 55px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -394,13 +393,13 @@ input:nth-of-type(5):checked ~ main#carousel {
     }
 
     .tituloProjeto > .col-12 > .row > .col-6 > a{
-        font-size: 10px;
+        font-size: 8px;
         color: #000;
         margin: 0;
     }
 
-    .tituloProjeto > .col-12 > .row > .col-6 > a > img{
-        height: 25px;
+    .tituloProjeto > .col-12 > .row > .col-6 > a > .linkProjetos{
+        font-size: 24px;
     }
 
 
@@ -451,7 +450,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 
     .tituloProjeto{
         position: relative;
-        bottom: 110px;
+        bottom: 70px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -459,7 +458,7 @@ input:nth-of-type(5):checked ~ main#carousel {
     }
 
     .tituloProjeto > .col-12 > p{
-        font-size: 18px;
+        font-size: 16px;
         margin: 0;
     }
 
@@ -469,8 +468,8 @@ input:nth-of-type(5):checked ~ main#carousel {
         margin: 0;
     }
 
-    .tituloProjeto > .col-12 > .row > .col-6 > a > img{
-        height: 25px;
+    .tituloProjeto > .col-12 > .row > .col-6 > a > .linkProjetos{
+        font-size: 28px;
     }
 
     /*Formatação do carousel da seção apresentação Desktop */
@@ -523,7 +522,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 
     .tituloProjeto{
         position: relative;
-        bottom: 130px;
+        bottom: 85px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -541,8 +540,8 @@ input:nth-of-type(5):checked ~ main#carousel {
         color: #000;
     }
 
-    .tituloProjeto > .col-12 > .row > .col-6 > a > img{
-        height: 40px;
+    .tituloProjeto > .col-12 > .row > .col-6 > a > .linkProjetos{
+        font-size: 36px;
     }
 
     /*Formatação do carousel da seção apresentação*/
@@ -589,7 +588,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 
     .tituloProjeto{
         position: relative;
-        bottom: 140px;
+        bottom: 105px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -607,8 +606,8 @@ input:nth-of-type(5):checked ~ main#carousel {
         color: #000;
     }
 
-    .tituloProjeto > .col-12 > .row > .col-6 > a > img{
-        height: 50px;
+    .tituloProjeto > .col-12 > .row > .col-6 > a > .linkProjetos{
+        font-size: 36px;
     }
 
     /*Formatação do carousel da seção apresentação*/
@@ -650,7 +649,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 
     .tituloProjeto{
         position: relative;
-        bottom: 150px;
+        bottom: 115px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -668,8 +667,8 @@ input:nth-of-type(5):checked ~ main#carousel {
         color: #000;
     }
 
-    .tituloProjeto > .col-12 > .row > .col-6 > a > img{
-        height: 50px;
+    .tituloProjeto > .col-12 > .row > .col-6 > a > .linkProjetos{
+        font-size: 36px;
     }
 
     /*Formatação do carousel da seção apresentação*/
@@ -686,21 +685,24 @@ input:nth-of-type(5):checked ~ main#carousel {
             translateX(calc(-280px * var(--r)));
         z-index: calc((var(--position) - var(--abs)));
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
+
+
+/* Formatação Rodapé */
+/* Formatação dos icones do rodapé */
+
+footer{
+    color: #FFF;
+}
+
+#iconesRodape{
+    font-size: 32px;
+}
+
+#iconesRodape > a {
+    color: white;
+}
 
 
 
