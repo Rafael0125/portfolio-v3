@@ -13,4 +13,14 @@
 
 <br>
 
-<img src="imagens/printPortfolio.png">
+<h3 align="center"> Versão Desktop </h3>
+
+<img src="assets/captura-Desktop.png">
+
+<h3 align="center"> Versão Mobile </h3>
+
+<p align='center'>
+ 
+ <img src="assets/capturaMobile.png">
+ 
+</p>
