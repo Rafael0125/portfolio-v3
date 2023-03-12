@@ -344,6 +344,22 @@ input:nth-of-type(5):checked ~ main#carousel {
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) { 
 
+    /* Formatação do Menu */
+
+    #nav-principal{
+        margin-top: 2px;
+        z-index: 1;
+    }
+
+    .nav-item {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .nav-item a{
+        color: #000000;
+        font-weight: 500;
+    }
+
     /* Formatação dos modals dos icones das linguagens */
     .modal {
         position: fixed;
@@ -426,14 +442,6 @@ input:nth-of-type(5):checked ~ main#carousel {
         font-size: 26px;
     }
 
-    /* Formatação do menu de navegação */
-
-    .nav-item {
-        color: #f1f1f1;
-        display: flex;
-        justify-content: center;
-        background-color: rgba(255, 255, 255, 0.5);
-    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
