@@ -16,7 +16,6 @@ input[type="checkbox"]:checked ~ .modal-background {
 	display: block;
 }
 
-
 /* Formatação do Menu de navegação */
 
 header > .container{
@@ -25,19 +24,9 @@ header > .container{
     z-index: 1;
 }
 
-nav{
-    background: linear-gradient(30deg,rgba(35, 25, 66, 0.45),rgba(94, 84, 142, 0.45),rgba(159, 134, 192, 0.45),rgba(190, 151, 196, 0.45));
-
-
-}
-
 .nav-item a{
-    color: #FFF;
-}
-
-.nav-item a:hover{
-    color: #2b2a2a;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+    font-weight: 600;
 }
 
 /* Formatação da Seção de Apresentação */
@@ -223,7 +212,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 
 /* Formatação da seção Projetos */
 
-    /* Formatação dos modals dos icones das linguagens */
+/* Formatação dos modals dos icones das linguagens */
 
 .modal-background {
 	width: 100%;
@@ -420,6 +409,31 @@ input:nth-of-type(5):checked ~ main#carousel {
     .containerPrincipal{
         display: none;
     }
+
+    /* Formatação do footer */
+
+    footer{
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer > .container{
+        padding: 0;
+    }
+
+    #iconesRodape{
+        font-size: 26px;
+    }
+
+    /* Formatação do menu de navegação */
+
+    .nav-item {
+        color: #f1f1f1;
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -487,6 +501,24 @@ input:nth-of-type(5):checked ~ main#carousel {
         z-index: calc((var(--position) - var(--abs)));
     }
 
+    /* Formatação do footer */
+
+    footer{
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer > .container{
+        padding: 0;
+    }
+
+    #iconesRodape{
+        font-size: 30px;
+    }
+    
+    
+
 
 
 
@@ -507,7 +539,7 @@ input:nth-of-type(5):checked ~ main#carousel {
         margin: auto;
         display: none;	
         width: 450px;
-        height: 500px;
+        height: 530px;
         background-color: rgba(255, 255, 255, 0.8);
         box-sizing: border-box;
         z-index: 9999;
@@ -558,6 +590,36 @@ input:nth-of-type(5):checked ~ main#carousel {
         translateX(calc(-200px * var(--r)));
         z-index: calc((var(--position) - var(--abs)));
     }
+
+
+    /* Formatação do footer */
+
+    footer{
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer > .container{
+        padding: 0;
+    }
+
+    #iconesRodape{
+        font-size: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -624,6 +686,42 @@ input:nth-of-type(5):checked ~ main#carousel {
             translateX(calc(-250px * var(--r)));
         z-index: calc((var(--position) - var(--abs)));
     }
+
+    /* Formatação do footer */
+
+    footer{
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer > .container{
+        padding: 0;
+    }
+
+    #iconesRodape{
+        font-size: 34px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
@@ -685,20 +783,36 @@ input:nth-of-type(5):checked ~ main#carousel {
             translateX(calc(-280px * var(--r)));
         z-index: calc((var(--position) - var(--abs)));
     }
+
+    /* Formatação do footer */
+
+    footer{
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer > .container{
+        padding: 0;
+    }
+
+    #iconesRodape{
+        font-size: 38px;
+    }
+    
+
+
+
 }
 
-
-
 /* Formatação Rodapé */
-/* Formatação dos icones do rodapé */
+
 
 footer{
     color: #FFF;
 }
 
-#iconesRodape{
-    font-size: 32px;
-}
+/* Formatação dos icones do rodapé */
 
 #iconesRodape > a {
     color: white;
