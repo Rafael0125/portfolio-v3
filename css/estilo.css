@@ -187,7 +187,7 @@ input:nth-of-type(5):checked ~ main#carousel {
     --position: 5;
 }
 
-/* Formatação Mobile */
+/* Formatação Carrousel Mobile */
 
 #carrousel{
     height: 380px;
@@ -233,8 +233,8 @@ input:nth-of-type(5):checked ~ main#carousel {
     bottom: 0;
     margin: auto;
     display: none;	
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     background-color: rgba(255, 255, 255, 0.8);
     box-sizing: border-box;
     z-index: 9999;
@@ -370,7 +370,7 @@ input:nth-of-type(5):checked ~ main#carousel {
         margin: auto;
         display: none;	
         width: 300px;
-        height: 550px;
+        height: 400px;
         background-color: rgba(255, 255, 255, 0.8);
         box-sizing: border-box;
         z-index: 9999;
